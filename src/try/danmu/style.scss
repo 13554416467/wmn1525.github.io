@@ -1,0 +1,113 @@
+.danmu-wrap {
+    box-sizing: border-box;
+    .danmu-pool {
+        // height: 400px;
+        margin: 30px 0;
+        border: 1px solid #ddd;
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+        .danmu-item {
+            position: absolute;
+            font-size: 20px;
+            animation: itemMove 10s ease-in;
+            user-select: none;
+        }
+    }
+    .danmu-input-label {
+        display: block;
+        position: relative;
+        font-size: 28px;
+        text-align: center;
+        top: 30px;
+        opacity: 1;
+        transition: all 2s;
+    }
+    .danmu-input-label-disappear {
+        top: -120px;
+        opacity: 0;
+        transition: all 2s;
+    }
+    .danmu-input {
+        display: block;
+        padding: 5px 10px;
+        width: 300px;
+        margin: 0 auto;
+        height: 30px;
+        border-radius: 3px;
+        border: 1px solid #aaa;
+    }
+    .danmu-button {
+        text-align: center;
+        padding: 15px 0;
+        button {
+            background: #fff;
+            border-radius: 3px;
+            border: 1px solid #aaa;
+            padding: 10px 35px;
+            transition: all 0.3s;
+        }
+        .danmu-sender {
+            &:hover,
+            &:focus {
+                border: 1px solid #63c7f9;
+                color: #63c7f9;
+                outline: none;
+                transition: all 0.3s;
+            }
+        }
+        .danmu-clear {
+            &:hover,
+            &:focus {
+                border: 1px solid #f38282;
+                color: #f38282;
+                outline: none;
+                transition: all 0.3s;
+            }
+        }
+    }
+    .dslider-wrap {
+        position: relative; // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        overflow: hidden;
+        .dslider-block {
+            transition: height 1s;
+            width: 250px;
+            position: relative;
+            margin: 0 auto;
+            height: 40px;
+            background: #eee;
+        }
+        .dslider-bg {
+            width: 0;
+            height: 40px;
+            background: #317ef3;
+        }
+        .dslider-handler {
+            position: absolute;
+            top: 0;
+            width: 40px;
+            height: 38px;
+            cursor: move;
+            background: #fff;
+            border: 1px solid #ddd;
+            i {
+                display: block;
+                line-height: 40px;
+                text-align: center;
+            }
+        }
+        .color-green {
+            color: #0f0;
+        }
+    }
+    @keyframes itemMove {
+        from {
+            left: 100%;
+        }
+        to {
+            left: -100%;
+        }
+    }
+}

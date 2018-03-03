@@ -1,0 +1,33 @@
+.slider-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .slider-block {
+        width: 250px;
+        height: 40px;
+        background: #eee;
+    }
+    .slider-bg {
+        width: 0;
+        height: 40px;
+        background: #317ef3;
+    }
+    .slider-handler {
+        position: absolute;
+        top: 0;
+        width: 40px;
+        height: 38px;
+        cursor:move;
+        background: #fff;
+        border: 1px solid #ddd;
+        i {
+            display: block;
+            line-height: 40px;
+            text-align: center;
+        }
+    }
+    .color-green{
+        color: #0f0;
+    }
+}

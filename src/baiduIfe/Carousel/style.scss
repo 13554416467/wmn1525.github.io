@@ -1,0 +1,81 @@
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.Carousel-wrap {
+    width: 600px;
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden;
+    height: 338px;
+    &:hover .arrow {
+        transition: opacity 0.3s;
+        opacity: 1;
+    }
+    .pic-list {
+        width: 3600px;
+        position: absolute;
+    }
+    .pic-list img {
+        width: 600px;
+        float: left;
+    }
+    .toggle-wrap {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 320px);
+    }
+    .toggle-wrap span {
+        display: block;
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
+        background: #444;
+        border-radius: 50%;
+        float: left;
+        border: 1px solid #fff;
+        transition: background 0.3s;
+    }
+    .toggle-wrap span:hover,
+    .toggle-active {
+        background: #f00 !important;
+        transition: background 0.3s;
+    }
+    .toggle-wrap span:not(:last-child) {
+        margin-right: 10px;
+    }
+    .arrow {
+        position: absolute;
+        display: block;
+        opacity: 0;
+        cursor: pointer;
+        width: 40px;
+        height: 45px;
+        text-align: center;
+        color: #fff;
+        line-height: 45px;
+        font-size: 35px;
+        font-weight: 200;
+        background: rgba(0, 0, 0, 0.5);
+        transition: all 0.3s;
+        border-radius: 2px;
+        user-select: none;
+    }
+    .arrow:hover {
+        transition: background 0.3s;
+        background: rgba(0, 0, 0, 0.9);
+    }
+    .arrow-prev {
+        transform: translate(10px, 150px);
+    }
+    .arrow-next {
+        transform: translate(550px, 150px);
+    }
+}

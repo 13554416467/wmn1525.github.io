@@ -1,0 +1,16 @@
+.QR-code-wrap {
+    h1 {
+        color: #317ef3;
+        text-align: center;
+        font-size: 55px;
+    }
+    .Qr {
+        display: flex;
+        justify-content: space-around;
+        p {
+            font-size: 20px;
+            text-align: center;
+            color: #317ef3;
+        }
+    }
+}
