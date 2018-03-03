@@ -1,68 +1,145 @@
 webpackJsonp([2],[
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return w; });
+/**
+ * 自用框架
+ * import { w } from './wtool';
+ * w.$('node')  获取单个元素
+ * w.$$('node')  获取多个的元素
+ * w.hasClass(elementId, cName)  检查元素是否有指定class
+ * w.addClass(elementId, cName)  添加class
+ * w.replaceClass(elementId, cName,nName)  替换class
+ * w.removeClass(elementId, cName)   删除class
+ * w.removaAllChildNodes(elementId)   删除所有子节点
+ * w.addEvent(elementId, event, func)  添加事件
+ * w.formatSeconds(value)  把数值格式化为时间
+ * w.attr(node, attr, newVal)  获取或设置元素属性 newVal为空是为查询
+ */
 
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
 var w = {
-    $: function $(selector) {
+    /**
+     * 获取单个的元素
+     * 
+     * @param {String} selector
+     * @param {Element} [context=document]
+     * @returns {Element} element
+     */
+    $: selector => {
         if (document instanceof NodeList) {
-            return Array.from(document, function (node) {
+            return Array.from(document, node => {
                 return node.querySelector(selector);
             });
         }
         return document.querySelector(selector);
     },
 
-    $$: function $$(selector) {
+    /**
+     * 获取多个的元素
+     * 
+     * @param {String} selector
+     * @param {Element} [context=document]
+     * @returns {Element} element
+     */
+    $$: selector => {
         if (document instanceof NodeList) {
-            return Array.from(document, function (node) {
+            return Array.from(document, node => {
                 return node.querySelectorAll(selector);
             });
         }
         return document.querySelectorAll(selector);
     },
-    hasClass: function hasClass(elementId, cName) {
+    /**
+     * 检查元素是否有指定class
+     * 
+     * @param {String} cName
+     * @param {Element} elementId
+     * @returns {boolean} boolean
+     */
+    hasClass(elementId, cName) {
         return !!elementId.className.match(new RegExp("(\\s|^)" + cName + "(\\s|$)"));
     },
-    addClass: function addClass(elementId, cName) {
+    /**
+     * 元素添加class
+     * 
+     * @param {String} cName
+     * @param {Element} elementId
+     */
+    addClass(elementId, cName) {
         if (!w.hasClass(elementId, cName)) {
             elementId.className += " " + cName;
         }
     },
-    replaceClass: function replaceClass(elementId, cName, nName) {
+    /**
+     * 元素替换class
+     * 
+     * @param {Element} elementId
+     * @param {String} cName
+     * @param {String} nName
+     */
+    replaceClass(elementId, cName, nName) {
         w.removeClass(elementId, cName);
         w.addClass(elementId, nName);
     },
-    removeClass: function removeClass(elementId, cName) {
+    /**
+     * 元素删除class
+     * 
+     * @param {String} cName
+     * @param {Element} elementId
+     */
+    removeClass(elementId, cName) {
         if (w.hasClass(elementId, cName)) {
             elementId.className = elementId.className.replace(new RegExp('(^|\\b)' + cName.split(' ').join('|') + '(\\b|$)', 'gi'), '');
         }
     },
-    removaAllChildNodes: function removaAllChildNodes(elementId) {
+    /**
+     * 删除所有子节点
+     * 
+     * @param {Element} elementId
+     */
+    removaAllChildNodes(elementId) {
         var childs = elementId.childNodes;
         for (var i = childs.length - 1; i >= 0; i--) {
             elementId.removeChild(childs.item(i));
         }
     },
-    removaSelfNodes: function removaSelfNodes(elementId) {
+    /**
+     * 删除自身节点
+     * 
+     * @param {Element} elementId
+     */
+    removaSelfNodes(elementId) {
         w.removaAllChildNodes(elementId);
         var parent = elementId.parentNode;
         parent.removeChild(elementId);
     },
 
-    attr: function attr(node, _attr, newVal) {
+    /**
+     * 获取或设置元素属性
+     * 
+     * @param {Element} node
+     * @param {String} attr
+     * @param {String} [newVal=null]
+     * @returns {String} element's attribute value or null
+     */
+    attr: (node, attr, newVal) => {
+        // newVal = null
         if (newVal) {
-            node.setAttribute(_attr, newVal);
+            node.setAttribute(attr, newVal);
             return;
         }
-        return node.getAttribute(_attr);
+        return node.getAttribute(attr);
     },
-    addEvent: function addEvent(elementId, event, func) {
+    /**
+     * 添加事件
+     * 
+     * @param {Element} elementId
+     * @param {String} event
+     * @param {String} func
+     */
+    addEvent(elementId, event, func) {
         if (elementId != null) {
             if (elementId.addEventListener) {
                 elementId.addEventListener(event, func, false);
@@ -76,7 +153,13 @@ var w = {
             return false;
         }
     },
-    formatSeconds: function formatSeconds(value) {
+    /**
+     * 将数值格式化为时间
+     * 
+     * @param {String} value
+     * @returns {String} timr or NaN
+     */
+    formatSeconds(value) {
         var minute = parseInt(value / 60);
         var second = parseInt(value - minute * 60);
         var result;
@@ -89,40 +172,29 @@ var w = {
         }
     }
 };
-exports.w = w;
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["create"] = create;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wtools__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__template_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style_scss__);
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.create = create;
-
-var _wtools = __webpack_require__(0);
-
-var _template = __webpack_require__(8);
-
-var _template2 = _interopRequireDefault(_template);
-
-__webpack_require__(21);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function create() {
-  _wtools.w.$$(".container")[0].innerHTML = _template2.default;
+  __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$$(".container")[0].innerHTML = __WEBPACK_IMPORTED_MODULE_1__template_html___default.a;
 }
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
 
 __webpack_require__(3);
 __webpack_require__(6);
@@ -171,16 +243,16 @@ module.exports = "/*! normalize.css v2.1.3 | MIT License | git.io/normalize */\n
 
 /***/ }),
 /* 6 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wtools__ = __webpack_require__(0);
 
+//set数组，自动去重
+const routers = new Set();
 
-var _wtools = __webpack_require__(0);
-
-var routers = new Set();
-
-var list = [{
+const list = [{
     "title": "DEMO",
     "tasks": [{
         "title": "移动端图片展示",
@@ -275,77 +347,84 @@ var list = [{
     }]
 }];
 
+//初始化时检查hash是否为空，空时默认指向index，否则解析hash
 window.onload = function () {
     routers.add("index");
     routers.add("resume");
     routers.add("404");
 
-    listFill();
-    var isClickRedirect = false;
+    listFill(); //列表填充
+    let isClickRedirect = false; //是否点击跳转。是则不触发hashchange事件
     if (location.hash == '') {
         redirectTo("index");
     } else {
-        var _hash = location.hash.toString().substr(2);
+        let _hash = location.hash.toString().substr(2);
         analysis(_hash);
     }
 
+    // 路由切换
     window.addEventListener('hashchange', function () {
         console.log("hashchange", isClickRedirect);
         if (!isClickRedirect) {
-            var _hash2 = location.hash.toString().substr(2);
-            analysis(_hash2);
+            let _hash = location.hash.toString().substr(2);
+            analysis(_hash);
         } else {
             isClickRedirect = false;
         }
     });
 
-    _wtools.w.addEvent(_wtools.w.$("#myResume"), "click", function () {
+    //跳转至简历
+    __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#myResume"), "click", function () {
         location.hash = '#/resume';
         __webpack_require__.e/* require.ensure */(1).then((function () {
             __webpack_require__(27).create();
         }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
     });
 
-    _wtools.w.addEvent(_wtools.w.$("#moblieBlock"), "click", function () {
+    //移动端导航
+    __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#moblieBlock"), "click", function () {
 
         if (navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)) {
-            if (_wtools.w.$("#menuBlock").style.top == "0px") {
-                _wtools.w.$("#menuBlock").style.top = "-110%";
-                _wtools.w.$("#mobileBlockNav").style.display = "none";
-                _wtools.w.$("#mobileBlockAvatar").style.display = "block";
+            if (__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#menuBlock").style.top == "0px") {
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#menuBlock").style.top = "-110%";
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#mobileBlockNav").style.display = "none";
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#mobileBlockAvatar").style.display = "block";
             } else {
-                _wtools.w.$("#menuBlock").style.top = "0px";
-                _wtools.w.$("#mobileBlockNav").style.display = "block";
-                _wtools.w.$("#mobileBlockAvatar").style.display = "none";
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#menuBlock").style.top = "0px";
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#mobileBlockNav").style.display = "block";
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#mobileBlockAvatar").style.display = "none";
             }
         }
     });
 
-    _wtools.w.addEvent(_wtools.w.$("#infoName"), "click", function () {
+    //跳转至index
+    __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#infoName"), "click", function () {
         location.hash = '#/index';
         new Promise(function(resolve) { resolve(); }).then((function () {
             __webpack_require__(1).create();
         }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
     });
 
-    _wtools.w.addEvent(_wtools.w.$("#myLink"), "click", function () {
+    //监听列表点击事件
+    __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#myLink"), "click", function () {
+        // w.$("#myLink").querySelector('a').click();
         if (navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)) {
-            _wtools.w.$("#menuBlock").style.top = "-110%";
-            _wtools.w.$("#mobileBlockNav").style.display = "none";
-            _wtools.w.$("#mobileBlockAvatar").style.display = "block";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#menuBlock").style.top = "-110%";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#mobileBlockNav").style.display = "none";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#mobileBlockAvatar").style.display = "block";
         }
     });
-
-    _wtools.w.addEvent(_wtools.w.$("#infoName"), "click", function () {
+    //监听列表点击事件
+    __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#infoName"), "click", function () {
         if (navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)) {
-            _wtools.w.$("#menuBlock").style.top = "-110%";
-            _wtools.w.$("#mobileBlockNav").style.display = "none";
-            _wtools.w.$("#mobileBlockAvatar").style.display = "block";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#menuBlock").style.top = "-110%";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#mobileBlockNav").style.display = "none";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#mobileBlockAvatar").style.display = "block";
         }
     });
-
-    _wtools.w.addEvent(_wtools.w.$("#homeNav"), "click", function (e) {
-        var _hash = void 0,
+    //监听列表点击事件
+    __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#homeNav"), "click", function (e) {
+        let _hash,
             isLi = false;
         if (e.target && e.target.nodeName == "LI" && e.target.dataset.name) {
             _hash = e.target;
@@ -368,14 +447,14 @@ window.onload = function () {
             }
         }
         if (navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)) {
-            _wtools.w.$("#menuBlock").style.top = "-110%";
-            _wtools.w.$("#mobileBlockNav").style.display = "none";
-            _wtools.w.$("#mobileBlockAvatar").style.display = "block";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#menuBlock").style.top = "-110%";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#mobileBlockNav").style.display = "none";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#mobileBlockAvatar").style.display = "block";
         }
     });
 
-    var originTitle = document.title,
-        titleTime = void 0;
+    let originTitle = document.title,
+        titleTime;
     document.addEventListener("visibilitychange", function () {
         if (document.hidden) {
             document.title = "死鬼干什么去了！";
@@ -389,22 +468,24 @@ window.onload = function () {
     });
 };
 
-var listFill = function listFill() {
-    _wtools.w.removaAllChildNodes(_wtools.w.$("#homeNav"));
-    var cFrag = document.createDocumentFragment();
-    var listWrapUl = document.createElement("ul");
+//列表填充
+const listFill = function () {
+    // console.log("listFill");
+    __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].removaAllChildNodes(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#homeNav"));
+    const cFrag = document.createDocumentFragment();
+    const listWrapUl = document.createElement("ul");
     for (var key in list) {
         if (list.hasOwnProperty(key)) {
-            var listCollageLi = document.createElement("li");
+            const listCollageLi = document.createElement("li");
             listCollageLi.innerHTML = list[key].title;
             listWrapUl.appendChild(listCollageLi);
-            var listTaskUl = document.createElement("ul");
+            const listTaskUl = document.createElement("ul");
             var element = list[key];
             for (var t in element.tasks) {
                 var ele = element.tasks[t];
-                var listTaskLi = document.createElement("li");
-                var listTaskI = document.createElement("i");
-                var listTaskSpan = ele.isLink ? document.createElement("a") : document.createElement("span");
+                const listTaskLi = document.createElement("li");
+                const listTaskI = document.createElement("i");
+                const listTaskSpan = ele.isLink ? document.createElement("a") : document.createElement("span");
                 listTaskI.className = ele.isLink ? "iconfont icon-lianjie circle-dot" : "iconfont icon-iconfontdian1 circle-dot";
                 ele.completed ? listTaskI.classList.add("completed") : "";
                 listTaskLi.dataset.name = ele.name;
@@ -421,10 +502,11 @@ var listFill = function listFill() {
     }
     cFrag.appendChild(listWrapUl);
     console.log(routers);
-    _wtools.w.$("#homeNav").appendChild(cFrag);
+    __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#homeNav").appendChild(cFrag);
 };
 
-var redirectTo = function redirectTo(rdpath) {
+//重定向页面
+const redirectTo = function (rdpath) {
     console.log("redirect to: " + rdpath);
     location.hash = '#/' + rdpath;
     __webpack_require__.e/* require.ensure */(0).then((function () {
@@ -432,37 +514,16 @@ var redirectTo = function redirectTo(rdpath) {
     }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 
-var analysis = function analysis(anahash) {
+// 分析hash
+const analysis = function (anahash) {
     console.log("analysis: " + anahash);
-    var isExisted = false;
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
-
-    try {
-        for (var _iterator = routers[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-            var key = _step.value;
-
-            if (key == anahash) {
-                isExisted = true;
-                break;
-            }
-        }
-    } catch (err) {
-        _didIteratorError = true;
-        _iteratorError = err;
-    } finally {
-        try {
-            if (!_iteratorNormalCompletion && _iterator.return) {
-                _iterator.return();
-            }
-        } finally {
-            if (_didIteratorError) {
-                throw _iteratorError;
-            }
+    let isExisted = false;
+    for (var key of routers) {
+        if (key == anahash) {
+            isExisted = true;
+            break;
         }
     }
-
     isExisted ? redirectTo(anahash) : redirectTo("404");
 };
 

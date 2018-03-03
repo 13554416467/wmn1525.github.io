@@ -1,12 +1,9 @@
 webpackJsonp([5],{
 
 /***/ 101:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-
-
-var SLiderV = function SLiderV() {
+const SLiderV = function () {
     var defaults = {
         sliderBlock: '#sliderBlock',
         sliderBg: '#sliderBg',
@@ -40,13 +37,14 @@ SLiderV.prototype.bindEvent = function () {
     var max = this.sliderBlock.offsetWidth - this.sliderHander.offsetWidth;
 
     var drag = {
-        start: function start(event) {
+        start: function (event) {
             console.log("start");
             startX = (event.clientX || event.touches[0].clientX) - _self.sliderHander.offsetLeft;
             document.addEventListener(move, drag.move, false);
             document.addEventListener(end, drag.end, false);
         },
-        move: function move() {
+        move: function () {
+            // console.log("move");
             lastX = (event.clientX || event.changedToucher[0].clientX) - startX;
             lastX = Math.max(0, Math.min(max, lastX));
             if (lastX >= max) {
@@ -59,7 +57,7 @@ SLiderV.prototype.bindEvent = function () {
             _self.sliderHander.style.left = lastX + "px";
             _self.sliderBg.style.width = lastX + "px";
         },
-        end: function end() {
+        end: function () {
             if (lastX < max) {
                 _self.sliderHander.style.left = 0;
                 _self.sliderBg.style.width = 0;

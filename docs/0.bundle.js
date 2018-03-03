@@ -1,27 +1,21 @@
 webpackJsonp([0,1],Array(27).concat([
 /* 27 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["create"] = create;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wtools__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__template_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style_scss__);
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.create = create;
 
-var _wtools = __webpack_require__(0);
-
-var _template = __webpack_require__(29);
-
-var _template2 = _interopRequireDefault(_template);
-
-__webpack_require__(30);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function create() {
-  _wtools.w.$$(".container")[0].innerHTML = _template2.default;
+  __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$$(".container")[0].innerHTML = __WEBPACK_IMPORTED_MODULE_1__template_html___default.a;
 }
 
 /***/ }),
@@ -128,28 +122,21 @@ module.exports = __webpack_require__.p + "static/img/viewpic (1)-ae805e72.jpg";
 /***/ }),
 /* 34 */,
 /* 35 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["create"] = create;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wtools__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__template_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style_scss__);
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.create = create;
-
-var _wtools = __webpack_require__(0);
-
-var _template = __webpack_require__(36);
-
-var _template2 = _interopRequireDefault(_template);
-
-__webpack_require__(37);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function create() {
-  _wtools.w.$$(".container")[0].innerHTML = _template2.default;
+  __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$$(".container")[0].innerHTML = __WEBPACK_IMPORTED_MODULE_1__template_html___default.a;
 }
 
 /***/ }),
@@ -205,29 +192,23 @@ exports.push([module.i, ".page404 span{display:block;font-size:80px;background-s
 
 /***/ }),
 /* 39 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["create"] = create;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wtools__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__template_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style_scss__);
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.create = create;
-
-var _wtools = __webpack_require__(0);
-
-var _template = __webpack_require__(40);
-
-var _template2 = _interopRequireDefault(_template);
-
-__webpack_require__(44);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function create() {
-  _wtools.w.$$(".container")[0].innerHTML = _template2.default;
+  __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$$(".container")[0].innerHTML = __WEBPACK_IMPORTED_MODULE_1__template_html___default.a;
   __webpack_require__(46);
+  // const c1=new c();
 }
 
 /***/ }),
@@ -301,14 +282,12 @@ exports.push([module.i, ".clearfix:after{content:\" \";display:block;clear:both;
 
 /***/ }),
 /* 46 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-
-var _wtools = __webpack_require__(0);
-
-var pic = [{
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wtools__ = __webpack_require__(0);
+const pic = [{
     "picId": 1,
     "picDes": "red flowers",
     "picPath": "http://i1.piimg.com/588926/4c8b92d4ab54f5db.jpg",
@@ -341,13 +320,15 @@ var pic = [{
 }];
 
 
-var Carousel = function Carousel() {
-    this.container = _wtools.w.$("#CarouselWrap");
-    this.picList = _wtools.w.$("#picList");
-    this.toggles = _wtools.w.$("#toggles").getElementsByTagName("span");
-    this.prev = _wtools.w.$("#prev");
-    this.next = _wtools.w.$("#next");
+const Carousel = function () {
 
+    //getDOM
+    this.container = __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#CarouselWrap");
+    this.picList = __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#picList");
+    this.toggles = __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#toggles").getElementsByTagName("span");
+    this.prev = __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#prev");
+    this.next = __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#next");
+    //当前切换序号
     this.toggleIndex = 1;
     this.isanimate = false;
     this.timer = null;
@@ -355,52 +336,51 @@ var Carousel = function Carousel() {
 };
 
 Carousel.prototype.init = function () {
-    var _this = this;
-
-    _wtools.w.addEvent(this.next, "click", function () {
-        var t = parseInt(_this.toggleIndex);
+    __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(this.next, "click", () => {
+        let t = parseInt(this.toggleIndex);
         t == 5 ? t = 1 : t += 1;
-        _this.toggleIndex = parseInt(t);
-        if (!_this.isanimate) {
-            _this.animate(-600);
+        this.toggleIndex = parseInt(t);
+        if (!this.isanimate) {
+            this.animate(-600);
         }
-        _this.toggle();
+        this.toggle();
     });
 
-    _wtools.w.addEvent(this.prev, "click", function () {
-        var t = parseInt(_this.toggleIndex);
+    __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(this.prev, "click", () => {
+        let t = parseInt(this.toggleIndex);
         t == 1 ? t = 5 : t -= 1;
-        _this.toggleIndex = parseInt(t);
-        if (!_this.isanimate) {
-            _this.animate(600);
+        this.toggleIndex = parseInt(t);
+        if (!this.isanimate) {
+            this.animate(600);
         }
-        _this.toggle();
+        this.toggle();
     });
 
-    _wtools.w.addEvent(this.container, "mouseover", function () {
-        clearInterval(_this.timer);
+    __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(this.container, "mouseover", () => {
+        clearInterval(this.timer);
     });
 
-    _wtools.w.addEvent(this.container, "mouseout", function () {
-        _this.play();
+    __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(this.container, "mouseout", () => {
+        this.play();
     });
 
-    _wtools.w.addEvent(this.toggles, "click", function (e) {
+    __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(this.toggles, "click", e => {
         if (e.target && e.target.nodeName == "SPAN") {
             if (e.target.className == "toggle-active") {
                 return;
             }
-            _this.animate(-600 * (e.target.dataset.index - _this.toggleIndex));
-            _this.toggleIndex = e.target.dataset.index;
-            _this.toggle();
+            this.animate(-600 * (e.target.dataset.index - this.toggleIndex));
+            this.toggleIndex = e.target.dataset.index;
+            this.toggle();
         }
     });
     this.toggle();
     this.play();
 };
 
+//切换按钮
 Carousel.prototype.toggle = function () {
-    for (var i = 0; i < this.toggles.length; i++) {
+    for (let i = 0; i < this.toggles.length; i++) {
         if (this.toggles[i].className = 'toggle-active') {
             this.toggles[i].className = '';
         }
@@ -408,71 +388,64 @@ Carousel.prototype.toggle = function () {
     this.toggles[parseInt(this.toggleIndex) - 1].className = 'toggle-active';
 };
 
+//切换图片
 Carousel.prototype.animate = function (offset) {
-    var _this2 = this;
-
     this.isanimate = true;
-    var leftNum = parseInt(this.picList.style.left, 10) + offset;
-    var time = 300,
-        interval = 10;
-    var speed = offset / (time / interval);
-    var go = function go() {
-        if (speed < 0 && parseInt(_this2.picList.style.left) > leftNum || speed > 0 && parseInt(_this2.picList.style.left) < leftNum) {
-            _this2.picList.style.left = parseInt(_this2.picList.style.left) + speed + 'px';
+    const leftNum = parseInt(this.picList.style.left, 10) + offset;
+    const time = 300,
+          //位移总时间
+    interval = 10; //位移时间间隔
+    let speed = offset / (time / interval); //每次位移量
+    // console.log("speed: "+speed+",picList-left: "+parseInt(this.picList.style.left)+",leftNum: "+leftNum)
+    const go = () => {
+        if (speed < 0 && parseInt(this.picList.style.left) > leftNum || speed > 0 && parseInt(this.picList.style.left) < leftNum) {
+            this.picList.style.left = parseInt(this.picList.style.left) + speed + 'px';
             setTimeout(go, interval);
         } else {
-            _this2.isanimate = false;
-            _this2.picList.style.left = leftNum + 'px';
+            this.isanimate = false;
+            this.picList.style.left = leftNum + 'px';
             if (leftNum > 0) {
-                _this2.picList.style.left = -2400 + 'px';
+                this.picList.style.left = -2400 + 'px';
             }
             if (leftNum < -2400) {
-                _this2.picList.style.left = 0 + 'px';
+                this.picList.style.left = 0 + 'px';
             }
         }
     };
     go();
 };
 
+//自动播放
 Carousel.prototype.play = function () {
-    var _this3 = this;
-
-    this.timer = setInterval(function () {
-        var t = parseInt(_this3.toggleIndex);
+    this.timer = setInterval(() => {
+        let t = parseInt(this.toggleIndex);
         t == 5 ? t = 1 : t += 1;
-        _this3.toggleIndex = parseInt(t);
-        if (!_this3.isanimate) {
-            _this3.animate(-600);
+        this.toggleIndex = parseInt(t);
+        if (!this.isanimate) {
+            this.animate(-600);
         }
-        _this3.toggle();
+        this.toggle();
     }, 3000);
 };
-var d = new Carousel();
+let d = new Carousel();
 
 /***/ }),
 /* 47 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["create"] = create;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wtools__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__template_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style_scss__);
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.create = create;
-
-var _wtools = __webpack_require__(0);
-
-var _template = __webpack_require__(48);
-
-var _template2 = _interopRequireDefault(_template);
-
-__webpack_require__(49);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function create() {
-  _wtools.w.$$(".container")[0].innerHTML = _template2.default;
+  __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$$(".container")[0].innerHTML = __WEBPACK_IMPORTED_MODULE_1__template_html___default.a;
   __webpack_require__.e/* require.ensure */(6).then((function () {
     __webpack_require__(51);
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
@@ -532,28 +505,21 @@ exports.push([module.i, "", ""]);
 /***/ }),
 /* 51 */,
 /* 52 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["create"] = create;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wtools__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__template_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style_scss__);
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.create = create;
-
-var _wtools = __webpack_require__(0);
-
-var _template = __webpack_require__(53);
-
-var _template2 = _interopRequireDefault(_template);
-
-__webpack_require__(54);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function create() {
-  _wtools.w.$$(".container")[0].innerHTML = _template2.default;
+  __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$$(".container")[0].innerHTML = __WEBPACK_IMPORTED_MODULE_1__template_html___default.a;
 }
 
 /***/ }),
@@ -638,28 +604,21 @@ module.exports = __webpack_require__.p + "static/img/genji-6cbeaf22.png";
 
 /***/ }),
 /* 58 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["create"] = create;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wtools__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__template_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style_scss__);
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.create = create;
-
-var _wtools = __webpack_require__(0);
-
-var _template = __webpack_require__(59);
-
-var _template2 = _interopRequireDefault(_template);
-
-__webpack_require__(60);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function create() {
-  _wtools.w.$$(".container")[0].innerHTML = _template2.default;
+  __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$$(".container")[0].innerHTML = __WEBPACK_IMPORTED_MODULE_1__template_html___default.a;
   init();
 }
 
@@ -668,49 +627,56 @@ function init() {
     confirm('未适配移动端');
   }
 
-  var bigBox = document.getElementById('bigBox'),
+  let bigBox = document.getElementById('bigBox'),
       moveBlock = document.getElementById('moveBlock'),
       moveType = document.getElementById('moveType'),
       moveOrder = document.getElementById('moveOrder'),
       path = 0,
-      de = 0,
-      dege = 0,
-      post = 0,
+      //方向
+  de = 0,
+      //角度模
+  dege = 0,
+      //角度
+  post = 0,
       leN = 0,
       toN = 0;
 
-  var moveE = function moveE(pos, path) {
+  //渲染   上0 右1 下2 左3
+  let moveE = function (pos, path) {
     post = pos;
-
+    // console.log("位置: " + pos + " | 方向: " + path);
     moveBlock.style.transform = 'rotate(' + dege + 'deg)';
     leN = parseInt(pos / 10) * 50;
     toN = parseInt(pos % 10) * 50;
-
+    // console.log("left:" + leN);
+    // console.log("top:" + toN);
     moveBlock.style.left = parseInt(pos / 10) * 50 + 'px';
     moveBlock.style.top = parseInt(pos % 10) * 50 + 'px';
   };
 
-  var render = function render() {
-    for (var i = 0; i < 10; i++) {
-      for (var j = 0; j < 10; j++) {
-        var lis = document.createElement('li');
+  //画格子
+  let render = function () {
+    for (let i = 0; i < 10; i++) {
+      for (let j = 0; j < 10; j++) {
+        let lis = document.createElement('li');
         lis.id = i + "" + j;
         bigBox.appendChild(lis);
       }
     }
   };
-
-  var ggTop = function ggTop() {
-    var p = parseInt(post) - 1;
+  //向上移动
+  let ggTop = function () {
+    let p = parseInt(post) - 1;
     if (toN >= 50) {
       moveE(p, 0);
     } else {
       p++;
+      // console.log("0p:" + p);
     }
   };
-
-  var ggRig = function ggRig() {
-    var p = parseInt(post) + 10;
+  //向右移动
+  let ggRig = function () {
+    let p = parseInt(post) + 10;
     if (p < 10) {
       p = 0 + "" + p;
     }
@@ -718,20 +684,22 @@ function init() {
       moveE(p, 1);
     } else {
       p -= 10;
+      // console.log("1p:" + p);
     }
   };
-
-  var ggBot = function ggBot() {
-    var p = parseInt(post) + 1;
+  //向下移动
+  let ggBot = function () {
+    let p = parseInt(post) + 1;
     if (p % 10 != 0) {
       moveE(p, 2);
     } else {
       p -= 1;
+      // console.log("2p:" + p);
     }
   };
-
-  var ggLef = function ggLef() {
-    var p = parseInt(post) - 10;
+  //向左移动
+  let ggLef = function () {
+    let p = parseInt(post) - 10;
     if (p < 10) {
       p = 0 + "" + p;
     }
@@ -739,10 +707,11 @@ function init() {
       moveE(p, 3);
     } else {
       p += 10;
+      // console.log("3p:" + p);
     }
   };
-
-  var GOmove = function GOmove() {
+  //GO
+  let GOmove = function () {
     if (de == 90 || de == -270) {
       path = 1;
     } else if (de == -90 || de == 270) {
@@ -767,51 +736,54 @@ function init() {
         break;
     }
   };
-
-  var tunLef = function tunLef() {
+  //左转
+  let tunLef = function () {
     moveBlock.style.transform = 'rotate(' + (dege -= 90) + 'deg)';
     de = dege % 360;
+    // console.log("%" + de);
   };
-
-  var tunRig = function tunRig() {
+  //右转
+  let tunRig = function () {
     moveBlock.style.transform = 'rotate(' + (dege += 90) + 'deg)';
     de = dege % 360;
+    // console.log("%" + de);
   };
-
-  var tunBac = function tunBac() {
+  //后转
+  let tunBac = function () {
     moveBlock.style.transform = 'rotate(' + (dege += 180) + 'deg)';
     de = dege % 360;
+    // console.log("%" + de);
   };
-
-  var wgoTop = function wgoTop() {
+  //上移
+  let wgoTop = function () {
     dege = 0;
     de = dege % 360;
     moveBlock.style.transform = 'rotate(' + dege + 'deg)';
     ggTop();
   };
-
-  var wgoBot = function wgoBot() {
+  //下移
+  let wgoBot = function () {
     dege = 180;
     de = dege % 360;
     moveBlock.style.transform = 'rotate(' + dege + 'deg)';
     ggBot();
   };
-
-  var wgoLef = function wgoLef() {
+  //左移
+  let wgoLef = function () {
     dege = 270;
     de = dege % 360;
     moveBlock.style.transform = 'rotate(' + dege + 'deg)';
     ggLef();
   };
-
-  var wgoRig = function wgoRig() {
+  //右移
+  let wgoRig = function () {
     dege = 90;
     de = dege % 360;
     moveBlock.style.transform = 'rotate(' + dege + 'deg)';
     ggRig();
   };
-
-  var letGo = function letGo(moveT) {
+  //画格子
+  let letGo = function (moveT) {
     if (moveT == "GO") {
       GOmove();
     } else if (moveT == "TUN LEF") {
@@ -822,12 +794,16 @@ function init() {
       tunBac();
     } else if (moveT == "TRA LEF") {
       ggLef();
+      // console.log("TRA LEF");
     } else if (moveT == "TRA TOP") {
       ggTop();
+      // console.log("TRA TOP");
     } else if (moveT == "TRA RIG") {
       ggRig();
+      // console.log("TRA RIG");
     } else if (moveT == "TRA BOT") {
       ggBot();
+      // console.log("TRA BOT");
     } else if (moveT == "MOV LEF") {
       wgoLef();
     } else if (moveT == "MOV TOP") {
@@ -837,6 +813,7 @@ function init() {
     } else if (moveT == "MOV BOT") {
       wgoBot();
     } else {
+      // console.log("else");
       moveType.innerHTML = "";
       moveType.placeholder = "请正确输入";
     }
@@ -845,18 +822,23 @@ function init() {
     var e = event || window.event;
     switch (e.keyCode) {
       case 96:
+        //0
         GOmove();
         break;
       case 38:
+        //上
         GOmove();
         break;
       case 37:
+        //左转
         tunLef();
         break;
       case 39:
+        //右转
         tunRig();
         break;
       case 40:
+        //回头
         tunBac();
         break;
       case 100:
@@ -884,16 +866,17 @@ function init() {
         ggBot();
         break;
       default:
+        // console.log(e.keyCode);
         break;
     }
   };
   setTimeout(function () {
     render();
-
+    //初始化位置为 5 5,方向为上
     moveE("55", 0);
-
+    //移动格子
     moveOrder.addEventListener("click", function () {
-      var moveT = moveType.value.trim();
+      let moveT = moveType.value.trim();
       letGo(moveT);
     }, false);
   }, 10);
@@ -952,233 +935,193 @@ exports.push([module.i, ".moveBlock-wrap{text-align:center;margin:1rem auto;posi
 
 /***/ }),
 /* 62 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["create"] = create;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wtools__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__template_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style_scss__);
 
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-exports.create = create;
 
-var _wtools = __webpack_require__(0);
-
-var _template = __webpack_require__(63);
-
-var _template2 = _interopRequireDefault(_template);
-
-__webpack_require__(64);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var currentPlay = 1,
+let currentPlay = 1,
     songDataLength = 0,
     loopstyle = 0,
-    myplay = void 0,
+    myplay,
     progressFlag = null;
 function create() {
-    _wtools.w.$$(".container")[0].innerHTML = _template2.default;
+    __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$$(".container")[0].innerHTML = __WEBPACK_IMPORTED_MODULE_1__template_html___default.a;
     init1();
     myplay = new audioPlay();
 }
 
-var songdata = [{
+let songdata = [{
     "songid": 1,
     "songname": "Fine乐团 - 感性",
     "like": "",
     "songpath": "http://7xurqc.com1.z0.glb.clouddn.com/Fine%E4%B9%90%E5%9B%A2%20-%20%E6%84%9F%E6%80%A7.mp3"
 }];
 
-var audioPlay = function () {
-    function audioPlay() {
-        _classCallCheck(this, audioPlay);
-
+class audioPlay {
+    constructor() {
         this.listFill();
         this.ainit(1);
-        _wtools.w.$('#voluemeLength').style.width = _wtools.w.$('#audioControl').volume * 100 + "%";
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#voluemeLength').style.width = __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#audioControl').volume * 100 + "%";
     }
-
-    _createClass(audioPlay, [{
-        key: 'listFill',
-        value: function listFill() {
-            _wtools.w.removaAllChildNodes(_wtools.w.$('#songListUl'));
-            for (var op in songdata) {
-                var l = document.createElement('li');
-                l.innerHTML = songdata[op].songname;
-                l.value = songdata[op].songid;
-                if (songdata[op].like == "y") {
-                    l.className = "ilikesong";
+    listFill() {
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].removaAllChildNodes(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songListUl'));
+        for (let op in songdata) {
+            let l = document.createElement('li');
+            l.innerHTML = songdata[op].songname;
+            l.value = songdata[op].songid;
+            if (songdata[op].like == "y") {
+                l.className = "ilikesong";
+            }
+            if (songdata[op].like == "n") {
+                l.className = "dislikesong";
+            }
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songListUl').appendChild(l);
+            songDataLength = op;
+            setNameColor(currentPlay);
+        }
+    }
+    ainit(el, eve) {
+        for (let op in songdata) {
+            if (songdata[op].songid == el) {
+                currentPlay = songdata[op].songid;
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#audioControl').src = songdata[op].songpath;
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#progressLine').style.width = 0;
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songCover').src = "http://7xurqc.com1.z0.glb.clouddn.com/%E9%BB%98%E8%AE%A4%E5%B0%81%E9%9D%A2.jpg";
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songName').innerHTML = songdata[op].songname;
+                document.title = songdata[op].songname;
+                if (songdata[op].like != "") {
+                    if (songdata[op].like == "y") {
+                        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songLove').style.color = "#F00";
+                        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songDisLove').style.color = "#000";
+                    } else if (songdata[op].like == "n") {
+                        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songLove').style.color = "#000";
+                        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songDisLove').style.color = "#F00";
+                    }
+                } else {
+                    __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songDisLove').style.color = "#000";
+                    __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songLove').style.color = "#000";
                 }
-                if (songdata[op].like == "n") {
-                    l.className = "dislikesong";
-                }
-                _wtools.w.$('#songListUl').appendChild(l);
-                songDataLength = op;
                 setNameColor(currentPlay);
             }
         }
-    }, {
-        key: 'ainit',
-        value: function ainit(el, eve) {
-            for (var op in songdata) {
-                if (songdata[op].songid == el) {
-                    currentPlay = songdata[op].songid;
-                    _wtools.w.$('#audioControl').src = songdata[op].songpath;
-                    _wtools.w.$('#progressLine').style.width = 0;
-                    _wtools.w.$('#songCover').src = "http://7xurqc.com1.z0.glb.clouddn.com/%E9%BB%98%E8%AE%A4%E5%B0%81%E9%9D%A2.jpg";
-                    _wtools.w.$('#songName').innerHTML = songdata[op].songname;
-                    document.title = songdata[op].songname;
-                    if (songdata[op].like != "") {
-                        if (songdata[op].like == "y") {
-                            _wtools.w.$('#songLove').style.color = "#F00";
-                            _wtools.w.$('#songDisLove').style.color = "#000";
-                        } else if (songdata[op].like == "n") {
-                            _wtools.w.$('#songLove').style.color = "#000";
-                            _wtools.w.$('#songDisLove').style.color = "#F00";
-                        }
-                    } else {
-                        _wtools.w.$('#songDisLove').style.color = "#000";
-                        _wtools.w.$('#songLove').style.color = "#000";
-                    }
-                    setNameColor(currentPlay);
-                }
-            }
-        }
-    }, {
-        key: 'apause',
-        value: function apause() {
-            if (_wtools.w.$('#audioControl').paused) {
-                this.aplay();
-            } else {
-                _wtools.w.$('#audioControl').pause();
-                _wtools.w.$('#songPause').className = _wtools.w.$('#songPause').className.replace('zanting', 'bofang');
-                clearInterval(progressFlag);
-            }
-        }
-    }, {
-        key: 'aplay',
-        value: function aplay() {
-            _wtools.w.$('#audioControl').play();
-            _wtools.w.$('#songPause').className = _wtools.w.$('#songPause').className.replace('bofang', 'zanting');
-            progressFlag = setInterval(getProgress, 1000);
-        }
-    }, {
-        key: 'aprevious',
-        value: function aprevious() {
-            this.setend();
-            getPriNo();
-            this.ainit(currentPlay, "pre");
+    }
+    apause() {
+        if (__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#audioControl').paused) {
             this.aplay();
+        } else {
+            // console.log("pause");
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#audioControl').pause();
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songPause').className = __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songPause').className.replace('zanting', 'bofang');
+            clearInterval(progressFlag);
         }
-    }, {
-        key: 'anext',
-        value: function anext() {
-            this.setend();
-            getNextNo();
-            this.ainit(currentPlay, "next");
-            this.aplay();
+    }
+    aplay() {
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#audioControl').play();
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songPause').className = __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songPause').className.replace('bofang', 'zanting');
+        progressFlag = setInterval(getProgress, 1000);
+    }
+    aprevious() {
+        // console.log("previous")
+        this.setend();
+        getPriNo();
+        this.ainit(currentPlay, "pre");
+        this.aplay();
+    }
+    anext() {
+        // console.log("next")
+        this.setend();
+        getNextNo();
+        this.ainit(currentPlay, "next");
+        this.aplay();
+    }
+    alike() {
+        // console.log("alike:" + currentPlay)
+        setLike(parseInt(currentPlay));
+    }
+    adislike() {
+        // console.log("alike:" + currentPlay)
+        setdisLike(parseInt(currentPlay));
+    }
+    adownload() {
+        console.log("download");
+    }
+    aloop() {
+        //0：列表循环  1：单曲 2：随机
+        // console.log("aloop")
+        let sw = parseInt(loopstyle);
+        switch (sw) {
+            case 0:
+                loopstyle = 1;
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].replaceClass(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songCycle'), "icon-xunhuan", "icon-danquxunhuan");
+                break;
+            case 1:
+                loopstyle = 2;
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].replaceClass(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songCycle'), "icon-danquxunhuan", "icon-suiji");
+                break;
+            case 2:
+                loopstyle = 0;
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].replaceClass(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songCycle'), "icon-suiji", "icon-xunhuan");
+                break;
+            default:
+                loopstyle = 0;
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].removeClass(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songCycle'), "icon-suiji");
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].removeClass(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songCycle'), "icon-danquxunhuan");
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addClass(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songCycle'), "icon-xunhuan");
+                break;
         }
-    }, {
-        key: 'alike',
-        value: function alike() {
-            setLike(parseInt(currentPlay));
+    }
+    setVolume() {
+        let mouseX = event.clientX,
+            voluemeLWidth = __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#voluemeL').offsetWidth,
+            voluemeLLeft = __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#voluemeL').getBoundingClientRect().left;
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#audioControl').volume = (mouseX - voluemeLLeft) / 50;
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#voluemeLength').style.width = (mouseX - voluemeLLeft) / 50 * 100 + "%";
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songVolume').style.color = "#555";
+    }
+    setRandom() {
+        getrandom();
+        this.ainit(parseInt(currentPlay), "next");
+        this.apause();
+    }
+    setend() {
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songPause').className = __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songPause').className.replace('zanting', 'bofang');
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#audioControl').currentTime = 0;
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#progressLine').style.width = 0 + "%";
+    }
+    setPlayProgress() {
+        let mouseX = event.clientX,
+            playWidth = __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#playProgress').offsetWidth,
+            playmeLLeft = __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#playProgress').getBoundingClientRect().left;
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#audioControl').currentTime = (mouseX - playmeLLeft) / 450 * __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#audioControl').duration;
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#progressLine').style.width = (mouseX - playmeLLeft) / 450 * 100 + "%";
+    }
+    gettime() {
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songTime').innerHTML = "-" + __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].formatSeconds(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#audioControl').duration - __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#audioControl').currentTime);
+    }
+    closeSongL() {
+        if (__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#wrapList').style.visibility == "hidden") {
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#wrapList').style.visibility = "visible";
+        } else {
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#wrapList').style.visibility = "hidden";
         }
-    }, {
-        key: 'adislike',
-        value: function adislike() {
-            setdisLike(parseInt(currentPlay));
-        }
-    }, {
-        key: 'adownload',
-        value: function adownload() {
-            console.log("download");
-        }
-    }, {
-        key: 'aloop',
-        value: function aloop() {
-            var sw = parseInt(loopstyle);
-            switch (sw) {
-                case 0:
-                    loopstyle = 1;
-                    _wtools.w.replaceClass(_wtools.w.$('#songCycle'), "icon-xunhuan", "icon-danquxunhuan");
-                    break;
-                case 1:
-                    loopstyle = 2;
-                    _wtools.w.replaceClass(_wtools.w.$('#songCycle'), "icon-danquxunhuan", "icon-suiji");
-                    break;
-                case 2:
-                    loopstyle = 0;
-                    _wtools.w.replaceClass(_wtools.w.$('#songCycle'), "icon-suiji", "icon-xunhuan");
-                    break;
-                default:
-                    loopstyle = 0;
-                    _wtools.w.removeClass(_wtools.w.$('#songCycle'), "icon-suiji");
-                    _wtools.w.removeClass(_wtools.w.$('#songCycle'), "icon-danquxunhuan");
-                    _wtools.w.addClass(_wtools.w.$('#songCycle'), "icon-xunhuan");
-                    break;
-            }
-        }
-    }, {
-        key: 'setVolume',
-        value: function setVolume() {
-            var mouseX = event.clientX,
-                voluemeLWidth = _wtools.w.$('#voluemeL').offsetWidth,
-                voluemeLLeft = _wtools.w.$('#voluemeL').getBoundingClientRect().left;
-            _wtools.w.$('#audioControl').volume = (mouseX - voluemeLLeft) / 50;
-            _wtools.w.$('#voluemeLength').style.width = (mouseX - voluemeLLeft) / 50 * 100 + "%";
-            _wtools.w.$('#songVolume').style.color = "#555";
-        }
-    }, {
-        key: 'setRandom',
-        value: function setRandom() {
-            getrandom();
-            this.ainit(parseInt(currentPlay), "next");
-            this.apause();
-        }
-    }, {
-        key: 'setend',
-        value: function setend() {
-            _wtools.w.$('#songPause').className = _wtools.w.$('#songPause').className.replace('zanting', 'bofang');
-            _wtools.w.$('#audioControl').currentTime = 0;
-            _wtools.w.$('#progressLine').style.width = 0 + "%";
-        }
-    }, {
-        key: 'setPlayProgress',
-        value: function setPlayProgress() {
-            var mouseX = event.clientX,
-                playWidth = _wtools.w.$('#playProgress').offsetWidth,
-                playmeLLeft = _wtools.w.$('#playProgress').getBoundingClientRect().left;
-            _wtools.w.$('#audioControl').currentTime = (mouseX - playmeLLeft) / 450 * _wtools.w.$('#audioControl').duration;
-            _wtools.w.$('#progressLine').style.width = (mouseX - playmeLLeft) / 450 * 100 + "%";
-        }
-    }, {
-        key: 'gettime',
-        value: function gettime() {
-            _wtools.w.$('#songTime').innerHTML = "-" + _wtools.w.formatSeconds(_wtools.w.$('#audioControl').duration - _wtools.w.$('#audioControl').currentTime);
-        }
-    }, {
-        key: 'closeSongL',
-        value: function closeSongL() {
-            if (_wtools.w.$('#wrapList').style.visibility == "hidden") {
-                _wtools.w.$('#wrapList').style.visibility = "visible";
-            } else {
-                _wtools.w.$('#wrapList').style.visibility = "hidden";
-            }
-        }
-    }]);
+    }
+}
 
-    return audioPlay;
-}();
-
-var getLike = function getLike(ele) {
-    var islikes = 0;
-    for (var op in songdata) {
+//return 0:nothing 1:dis 2:like
+const getLike = function (ele) {
+    let islikes = 0;
+    for (let op in songdata) {
         if (songdata[op].songid == ele) if (songdata[op].like == "n") {
             islikes = 1;
         } else {
@@ -1188,42 +1131,43 @@ var getLike = function getLike(ele) {
     return islikes;
 };
 
-var setLike = function setLike(ele) {
-    var islikes = 0;
-    for (var op in songdata) {
+const setLike = function (ele) {
+    let islikes = 0;
+    for (let op in songdata) {
         if (songdata[op].songid == ele) if (songdata[op].like == "y") {
             songdata[op].like = "";
-            _wtools.w.$('#songLove').style.color = "#000";
-            _wtools.w.$('#songDisLove').style.color = "#000";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songLove').style.color = "#000";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songDisLove').style.color = "#000";
         } else {
             songdata[op].like = "y";
-            _wtools.w.$('#songLove').style.color = "#f00";
-            _wtools.w.$('#songDisLove').style.color = "#000";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songLove').style.color = "#f00";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songDisLove').style.color = "#000";
         }
     }
     myplay.listFill();
 };
 
-var setdisLike = function setdisLike(ele) {
-    var islikes = 0;
-    for (var op in songdata) {
+const setdisLike = function (ele) {
+    let islikes = 0;
+    for (let op in songdata) {
         if (songdata[op].songid == ele) if (songdata[op].like == "n") {
             songdata[op].like = "";
-            _wtools.w.$('#songLove').style.color = "#000";
-            _wtools.w.$('#songDisLove').style.color = "#000";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songLove').style.color = "#000";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songDisLove').style.color = "#000";
         } else {
             songdata[op].like = "n";
-            _wtools.w.$('#songDisLove').style.color = "#f00";
-            _wtools.w.$('#songLove').style.color = "#000";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songDisLove').style.color = "#f00";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songLove').style.color = "#000";
         }
     }
     myplay.listFill();
 };
 
-var setNameColor = function setNameColor(el) {
-    var uls = document.getElementById('songListUl');
-    var items = uls.getElementsByTagName("li");
-    for (var i = 0; i < items.length; i++) {
+const setNameColor = function (el) {
+    let uls = document.getElementById('songListUl');
+    let items = uls.getElementsByTagName("li");
+    for (let i = 0; i < items.length; i++) {
+        // console.log(items[i].value)
         items[i].style.fontWeight = "normal";
         items[i].style.color = "#777";
         if (items[i].value == el) {
@@ -1233,7 +1177,8 @@ var setNameColor = function setNameColor(el) {
     }
 };
 
-var getPriNo = function getPriNo() {
+//向上获取序号
+const getPriNo = function () {
     if (parseInt(currentPlay) == 1) {
         currentPlay = parseInt(songDataLength) + 1;
     } else {
@@ -1244,7 +1189,8 @@ var getPriNo = function getPriNo() {
     }
 };
 
-var getNextNo = function getNextNo() {
+//向下获取序号
+const getNextNo = function () {
     if (parseInt(currentPlay) == parseInt(songDataLength) + 1) {
         currentPlay = 1;
     } else {
@@ -1255,8 +1201,9 @@ var getNextNo = function getNextNo() {
     }
 };
 
-var getrandom = function getrandom() {
-    var ne = parseInt(Math.random() * (parseInt(songDataLength) + 1) + 1);
+// 获取随机播放
+const getrandom = function () {
+    let ne = parseInt(Math.random() * (parseInt(songDataLength) + 1) + 1);
     if (ne == parseInt(currentPlay) || getLike(ne) == 1 || ne == "NaN") {
         getrandom();
     } else {
@@ -1264,17 +1211,19 @@ var getrandom = function getrandom() {
     }
 };
 
-var getProgress = function getProgress() {
-    if (_wtools.w.$('#audioControl')) {
-        var percent = _wtools.w.$('#audioControl').currentTime / _wtools.w.$('#audioControl').duration;
-        _wtools.w.$('#progressLine').style.width = (percent * 100).toFixed(1) + "%";
+// video的播放条
+const getProgress = function () {
+    if (__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#audioControl')) {
+        let percent = __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#audioControl').currentTime / __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#audioControl').duration;
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#progressLine').style.width = (percent * 100).toFixed(1) + "%";
         myplay.gettime();
     } else {
         clearInterval(progressFlag);
     }
 };
 
-var howNextPlay = function howNextPlay() {
+//下一首播啥
+const howNextPlay = function () {
     switch (parseInt(loopstyle)) {
         case 0:
             myplay.anext();
@@ -1288,8 +1237,9 @@ var howNextPlay = function howNextPlay() {
     }
 };
 
-var songpush = function songpush(adName, adPath) {
-    var sd = {
+//添加歌曲
+const songpush = function (adName, adPath) {
+    let sd = {
         "songid": songdata.length + 1,
         "songname": adName,
         "like": "",
@@ -1301,68 +1251,71 @@ var songpush = function songpush(adName, adPath) {
 
 function init1() {
     setTimeout(function () {
-        _wtools.w.addEvent(_wtools.w.$('#songPrevious'), "click", function () {
+        // 路由切换出时候暂停
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songPrevious'), "click", function () {
             myplay.aprevious();
         });
-        _wtools.w.addEvent(_wtools.w.$('#songPause'), "click", function () {
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songPause'), "click", function () {
             console.log("songPause");
             myplay.apause();
         });
-        _wtools.w.addEvent(_wtools.w.$('#songNext'), "click", function () {
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songNext'), "click", function () {
             myplay.anext();
         });
-        _wtools.w.addEvent(_wtools.w.$('#songDownload'), "click", function () {
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songDownload'), "click", function () {
             myplay.adownload();
         });
-        _wtools.w.addEvent(_wtools.w.$('#voluemeL'), "click", function () {
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#voluemeL'), "click", function () {
             myplay.setVolume();
         });
-        _wtools.w.addEvent(_wtools.w.$('#playProgress'), "click", function () {
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#playProgress'), "click", function () {
             myplay.setPlayProgress();
         });
-        _wtools.w.addEvent(_wtools.w.$('#closeSongList'), "click", function () {
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#closeSongList'), "click", function () {
             myplay.closeSongL();
         });
-        _wtools.w.addEvent(_wtools.w.$('#songVolume'), "click", function () {
-            var vo = 0.5;
-            if (_wtools.w.$('#audioControl').volume == 0) {
-                _wtools.w.$('#audioControl').volume = vo;
-                _wtools.w.$('#songVolume').style.color = "#555";
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songVolume'), "click", function () {
+            let vo = 0.5;
+            if (__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#audioControl').volume == 0) {
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#audioControl').volume = vo;
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songVolume').style.color = "#555";
             } else {
-                vo = _wtools.w.$('#audioControl').volume;
-                _wtools.w.$('#audioControl').volume = 0;
-                _wtools.w.$('#songVolume').style.color = "#f00";
+                vo = __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#audioControl').volume;
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#audioControl').volume = 0;
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songVolume').style.color = "#f00";
             }
         });
-        _wtools.w.addEvent(_wtools.w.$('#songListShow'), "click", function () {
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songListShow'), "click", function () {
             myplay.closeSongL();
         });
-        _wtools.w.addEvent(_wtools.w.$('#audioControl'), "ended", function () {
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#audioControl'), "ended", function () {
             myplay.setend();
             howNextPlay();
         });
-        _wtools.w.addEvent(_wtools.w.$('#songLove'), "click", function () {
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songLove'), "click", function () {
             myplay.alike();
         });
-        _wtools.w.addEvent(_wtools.w.$('#songDisLove'), "click", function () {
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songDisLove'), "click", function () {
             myplay.adislike();
         });
-        _wtools.w.addEvent(_wtools.w.$('#songCycle'), "click", function () {
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songCycle'), "click", function () {
             myplay.aloop();
         });
-        _wtools.w.addEvent(_wtools.w.$('#songListUl'), "click", function () {
-            var lis = document.getElementsByTagName("Li");
-            var target = event.target || event.srcElement;
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#songListUl'), "click", function () {
+            let lis = document.getElementsByTagName("Li");
+            let target = event.target || event.srcElement;
             if (!!target && target.nodeName.toUpperCase() === 'LI') {
                 console.log(target.value);
                 myplay.ainit(target.value);
                 myplay.apause();
             }
         });
-        _wtools.w.addEvent(_wtools.w.$('#inputAddSong'), "change", function () {
-            var files = _wtools.w.$('#inputAddSong').files;
-            for (var i = 0; i < files.length; i++) {
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#inputAddSong'), "change", function () {
+            // console.log("change")
+            const files = __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#inputAddSong').files;
+            for (let i = 0; i < files.length; i++) {
                 if (files[i].type.indexOf("audio") != -1 && files[i].size > 8094) {
+                    // console.log(files[i].name, URL.createObjectURL(files[i]))
                     songpush(files[i].name.substring(0, files[i].name.lastIndexOf(".")), URL.createObjectURL(files[i]));
                     myplay.listFill();
                 }
@@ -1424,28 +1377,22 @@ exports.push([module.i, ".clear:after{clear:both;display:block;visibility:hidden
 
 /***/ }),
 /* 66 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["create"] = create;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wtools__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__template_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style_scss__);
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.create = create;
 
-var _wtools = __webpack_require__(0);
-
-var _template = __webpack_require__(67);
-
-var _template2 = _interopRequireDefault(_template);
-
-__webpack_require__(68);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function create() {
-  _wtools.w.$$(".container")[0].innerHTML = _template2.default;
+  __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$$(".container")[0].innerHTML = __WEBPACK_IMPORTED_MODULE_1__template_html___default.a;
 }
 
 /***/ }),
@@ -1501,80 +1448,79 @@ exports.push([module.i, ".radioWrap{width:50%;margin:5rem auto}.radioWrap .wgrou
 
 /***/ }),
 /* 70 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["create"] = create;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wtools__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__template_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style_scss__);
 
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.create = create;
 
-var _wtools = __webpack_require__(0);
-
-var _template = __webpack_require__(71);
-
-var _template2 = _interopRequireDefault(_template);
-
-__webpack_require__(72);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function create() {
-    _wtools.w.$$(".container")[0].innerHTML = _template2.default;
+    __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$$(".container")[0].innerHTML = __WEBPACK_IMPORTED_MODULE_1__template_html___default.a;
     init();
 }
 
+//显示右击菜单
 function ShowRight(event) {
     var mouseX = event.clientX,
         mouseY = event.clientY,
-        rigClickWidth = _wtools.w.$('#rightContent').offsetWidth,
-        rigClickHeight = _wtools.w.$('#rightContent').offsetHeight,
+        rigClickWidth = __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#rightContent').offsetWidth,
+        rigClickHeight = __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#rightContent').offsetHeight,
         viewWidth = document.documentElement.clientWidth,
         viewHeight = document.documentElement.clientHeight;
 
-    _wtools.w.$('#rightContent').style.display = "block";
+    // console.log(mouseX, mouseY)
+    // && mouseY < (viewHeight - rigClickHeight)
+
+    __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#rightContent').style.display = "block";
     if (mouseX < viewWidth - rigClickWidth) {
         if (mouseY > viewHeight - rigClickHeight) {
-            _wtools.w.$('#rightContent').style.top = mouseY - rigClickHeight + "px";
-            _wtools.w.$('#rightContent').style.left = mouseX - rigClickWidth + "px";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#rightContent').style.top = mouseY - rigClickHeight + "px";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#rightContent').style.left = mouseX - rigClickWidth + "px";
         } else {
-            _wtools.w.$('#rightContent').style.top = mouseY + "px";
-            _wtools.w.$('#rightContent').style.left = mouseX + "px";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#rightContent').style.top = mouseY + "px";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#rightContent').style.left = mouseX + "px";
         }
     } else if (mouseX > viewWidth - rigClickWidth) {
         if (mouseY > viewHeight - rigClickHeight) {
-            _wtools.w.$('#rightContent').style.top = mouseY + "px";
-            _wtools.w.$('#rightContent').style.left = mouseX + "px";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#rightContent').style.top = mouseY + "px";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#rightContent').style.left = mouseX + "px";
         } else {
-            _wtools.w.$('#rightContent').style.top = mouseY + "px";
-            _wtools.w.$('#rightContent').style.left = mouseX - rigClickWidth + "px";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#rightContent').style.top = mouseY + "px";
+            __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#rightContent').style.left = mouseX - rigClickWidth + "px";
         }
     }
 }
-var init = function init() {
+const init = function () {
 
     setTimeout(function () {
-        _wtools.w.addEvent(_wtools.w.$('#rightClick'), "contextmenu", function () {
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#rightClick'), "contextmenu", function () {
+            //阻止原有右击菜单
             document.oncontextmenu = function (e) {
                 e.preventDefault();
             };
-
+            //显示右击菜单
             ShowRight(event);
         });
-        _wtools.w.addEvent(_wtools.w.$('#rightClick'), "click", function () {
-            if (_wtools.w.$('#rightContent')) {
-                _wtools.w.$('#rightContent').style.display = "none";
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#rightClick'), "click", function () {
+            if (__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#rightContent')) {
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#rightContent').style.display = "none";
             }
         });
         document.body.addEventListener("click", function (e) {
-            if (_wtools.w.$('#rightContent')) {
-                _wtools.w.$('#rightContent').style.display = 'none';
+            if (__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#rightContent')) {
+                __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#rightContent').style.display = 'none';
             }
             document.oncontextmenu = function (e) {};
         });
-        _wtools.w.addEvent(_wtools.w.$('#rightContent'), "click", function () {
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].addEvent(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$('#rightContent'), "click", function () {
             var lis = document.getElementsByTagName("Li");
             var target = event.target || event.srcElement;
             if (!!target && target.nodeName.toUpperCase() === 'LI') {
@@ -1637,33 +1583,26 @@ exports.push([module.i, ".r-content-wrap{width:100%;height:100%}.r-content-wrap 
 
 /***/ }),
 /* 74 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["create"] = create;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wtools__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__template_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style_scss__);
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.create = create;
-
-var _wtools = __webpack_require__(0);
-
-var _template = __webpack_require__(75);
-
-var _template2 = _interopRequireDefault(_template);
-
-__webpack_require__(76);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function create() {
-  _wtools.w.$$(".container")[0].innerHTML = _template2.default;
+  __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$$(".container")[0].innerHTML = __WEBPACK_IMPORTED_MODULE_1__template_html___default.a;
   init1();
 }
 
 function init1() {
-  var data = [5, 12, 51],
+  let data = [5, 12, 51],
       source = document.getElementById("source"),
       inLef = document.getElementById("insert-left"),
       inRig = document.getElementById("insert-right"),
@@ -1676,46 +1615,50 @@ function init1() {
       showBtn = document.getElementById("showBtn");
 
   function render() {
-    removeAllChild(sorts);
-    for (var i = 0; i < data.length; i++) {
-      var cont = document.createElement('li');
+    removeAllChild(sorts); //移除所有子节点
+    for (let i = 0; i < data.length; i++) {
+      const cont = document.createElement('li');
       cont.innerHTML = data[i];
       console.log(cont);
       sorts.appendChild(cont);
     }
   }
 
+  //搜索
   function searchItem() {
     render();
     console.log("###search###");
-    var seVa = searchText.value.trim().toLowerCase();
-    for (var i = 0; i < li.length; i++) {
+    let seVa = searchText.value.trim().toLowerCase();
+    for (let i = 0; i < li.length; i++) {
       if (li[i].textContent.toLowerCase().indexOf(seVa) !== -1) {
+        //边框染色
         li[i].className = "showli";
-
+        //文字染色
         li[i].innerHTML = li[i].textContent.replace(new RegExp(seVa, 'gm'), "<span>" + seVa + "</span>");
       }
     }
   }
 
+  //移除所有子节点
   function removeAllChild(node) {
     while (node.hasChildNodes()) {
       node.removeChild(node.lastChild);
     }
   }
 
-  var insertContent = function insertContent(path) {
+  //插入内容
+  var insertContent = function (path) {
     if (source.value.trim() != "") {
-      var sVa = source.value.trim().split(/-|,|，|、| |\n|\t/);
+      let sVa = source.value.trim().split(/-|,|，|、| |\n|\t/);
       if (path == "left") {
-        for (var i = sVa.length - 1; i >= 0; i--) {
+        for (let i = sVa.length - 1; i >= 0; i--) {
           if (sVa[i] == "") continue;
           data.unshift(sVa[i]);
         }
       } else {
-        for (var _i = 0; _i < sVa.length; _i++) {
-          if (sVa[_i] == "") continue;
-          data.push(sVa[_i]);
+        for (let i = 0; i < sVa.length; i++) {
+          if (sVa[i] == "") continue;
+          data.push(sVa[i]);
         }
       }
       source.value = "";
@@ -1728,12 +1671,12 @@ function init1() {
 
   function init() {
     render();
-
+    //重置提示信息
     source.addEventListener("mouseover", function () {
       notice.innerHTML = "";
       source.focus();
     }, false);
-
+    //添加按钮事件
     inLef.addEventListener("click", function () {
       insertContent("left");
     }, false);
@@ -1819,48 +1762,41 @@ exports.push([module.i, ".clear:after{content:\"\";display:block;height:0;clear:
 
 /***/ }),
 /* 78 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["create"] = create;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wtools__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__template_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style_scss__);
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.create = create;
-
-var _wtools = __webpack_require__(0);
-
-var _template = __webpack_require__(79);
-
-var _template2 = _interopRequireDefault(_template);
-
-__webpack_require__(80);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function create() {
-  _wtools.w.$$(".container")[0].innerHTML = _template2.default;
+  __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$$(".container")[0].innerHTML = __WEBPACK_IMPORTED_MODULE_1__template_html___default.a;
   init1();
 }
 
 function init1() {
-  var data = [50, 20, 75, 45, 74, 78, 65, 68, 45, 63, 23, 14];
+  let data = [50, 20, 75, 45, 74, 78, 65, 68, 45, 63, 23, 14];
 
-  var source = document.getElementById("source");
-  var inLef = document.getElementById("insert-left");
-  var inRig = document.getElementById("insert-right");
-  var outLef = document.getElementById("out-left");
-  var outRig = document.getElementById("out-right");
-  var sorts = document.getElementById("sorts");
-  var randomNum = document.getElementById("randomNum");
-  var notice1 = document.getElementById("resorts");
+  let source = document.getElementById("source");
+  let inLef = document.getElementById("insert-left");
+  let inRig = document.getElementById("insert-right");
+  let outLef = document.getElementById("out-left");
+  let outRig = document.getElementById("out-right");
+  let sorts = document.getElementById("sorts");
+  let randomNum = document.getElementById("randomNum");
+  let notice1 = document.getElementById("resorts");
 
   function render() {
     console.log("render");
     removeAllChild(sorts);
-    for (var i = 0; i < data.length; i++) {
-      var cont = document.createElement('li');
+    for (let i = 0; i < data.length; i++) {
+      const cont = document.createElement('li');
       cont.innerHTML = data[i];
       cont.style.height = data[i] / 10 + "rem";
       sorts.appendChild(cont);
@@ -1868,6 +1804,7 @@ function init1() {
   }
 
   function resorts() {
+    //console.log("s");
     var time = null,
         i = 0,
         j = 1;
@@ -1956,7 +1893,7 @@ function init1() {
     }, false);
     randomNum.addEventListener("click", function () {
       data = [];
-      for (var i = 0; i < 40; i++) {
+      for (let i = 0; i < 40; i++) {
         data[i] = parseInt(Math.random() * 90 + 10);
       }
       notice.innerHTML = "";
@@ -1966,7 +1903,7 @@ function init1() {
       if (data.length > 1) {
         resorts();
       }
-      var fieldset = document.getElementsByName("fieldset");
+      let fieldset = document.getElementsByName("fieldset");
       fieldset.disabled = true;
       notice.innerHTML = "";
     }, false);
@@ -2027,33 +1964,26 @@ exports.push([module.i, ".sort-insert ul{display:flex;flex-direction:row;align-i
 
 /***/ }),
 /* 82 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["create"] = create;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wtools__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__template_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style_scss__);
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.create = create;
-
-var _wtools = __webpack_require__(0);
-
-var _template = __webpack_require__(83);
-
-var _template2 = _interopRequireDefault(_template);
-
-__webpack_require__(84);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function create() {
-  _wtools.w.$$(".container")[0].innerHTML = _template2.default;
+  __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$$(".container")[0].innerHTML = __WEBPACK_IMPORTED_MODULE_1__template_html___default.a;
   init1();
 }
 
 function init1() {
-  var btWrap = document.getElementById("btWrap"),
+  let btWrap = document.getElementById("btWrap"),
       delNode = document.getElementById("delNode"),
       insInput = document.getElementById("insInput"),
       insNode = document.getElementById("insNode"),
@@ -2065,15 +1995,17 @@ function init1() {
       node = document.getElementsByTagName("div"),
       spans = document.getElementsByTagName("span"),
       data = [],
-      whoClick = void 0,
+      whoClick,
       arr = [];
 
+  //设置输入和按钮不可用
   function setDisabledT() {
-    for (var i = 0; i < inputs.length; i++) {
+    for (let i = 0; i < inputs.length; i++) {
       inputs[i].disabled = "disabled";
     }
   }
 
+  //设置输入和按钮可用
   function setDisabledF() {
     post.removeAttribute('disabled');
     pre.removeAttribute('disabled');
@@ -2081,17 +2013,19 @@ function init1() {
     seBtn.removeAttribute('disabled');
   }
 
+  //重置颜色和数组
   function resets() {
-    for (var i = 0; i < node.length; i++) {
+    for (let i = 0; i < node.length; i++) {
       node[i].style.backgroundColor = '#fff';
     }
     data = [];
     arr = [];
   }
 
+  //染色
   function coloring() {
     setDisabledT();
-    var i = 1;
+    let i = 1;
     data[0].style.backgroundColor = '#f00';
     var time = setInterval(function () {
       if (i < data.length) {
@@ -2106,12 +2040,13 @@ function init1() {
     }, 200);
   }
 
+  //搜索染色
   function Scoloring(a) {
     setDisabledT();
-    for (var _i = 0; _i < data.length; _i++) {
-      data[_i].style.backgroundColor = '#fff';
+    for (let i = 0; i < data.length; i++) {
+      data[i].style.backgroundColor = '#fff';
     }
-    var i = 1;
+    let i = 1;
     data[0].style.backgroundColor = '#f00';
     var time = setInterval(function () {
       if (i < a + 1) {
@@ -2125,6 +2060,7 @@ function init1() {
     }, 200);
   }
 
+  //前序
   function PreOrder(x) {
     var i;
     if (x != null) {
@@ -2140,6 +2076,7 @@ function init1() {
     }
   }
 
+  //中序
   function inOrder(x) {
     if (!(x == null)) {
       inOrder(x.firstElementChild);
@@ -2148,9 +2085,11 @@ function init1() {
     }
   }
 
+  //后序
   function postOrder(x) {
     var i;
     if (x != null) {
+      //list.push(node);
       var length = x.children.length;
       if (length == 0) {
         data.push(x);
@@ -2166,6 +2105,7 @@ function init1() {
     }
   }
 
+  //将节点内容存入数组
   function arrOrder(x) {
     var i;
     if (!(x == null)) {
@@ -2182,9 +2122,10 @@ function init1() {
     }
   }
 
+  //搜索字符串
   function searchArr(et) {
-    var flag = -1;
-    for (var i = 0; i < arr.length; i++) {
+    let flag = -1;
+    for (let i = 0; i < arr.length; i++) {
       if (arr[i] == et) {
         flag = i;
         continue;
@@ -2193,6 +2134,7 @@ function init1() {
     return flag;
   }
 
+  //初始化
   function init() {
     delNode.disabled = "disabled";
     insInput.disabled = "disabled";
@@ -2202,7 +2144,11 @@ function init1() {
       PreOrder(btWrap);
       coloring();
     });
-
+    // inp.addEventListener("click", function () {
+    //     resets();
+    //     inOrder(btWrap);
+    //     coloring();
+    // });
     post.addEventListener("click", function () {
       resets();
       postOrder(btWrap);
@@ -2212,16 +2158,16 @@ function init1() {
       resets();
       PreOrder(btWrap);
       arrOrder(btWrap);
-      if (_wtools.w.$("#seInput").value.trim() !== "") {
-        var a = searchArr(_wtools.w.$("#seInput").value.trim());
+      if (__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#seInput").value.trim() !== "") {
+        let a = searchArr(__WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#seInput").value.trim());
         if (a != -1) {
           Scoloring(a);
         } else {
           coloring();
-          _wtools.w.$("#seInput").value = "无";
+          __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#seInput").value = "无";
         }
       } else {
-        _wtools.w.$("#seInput").placeholder = "请先输入";
+        __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#seInput").placeholder = "请先输入";
       }
     });
     btWrap.addEventListener('click', function (e) {
@@ -2238,12 +2184,13 @@ function init1() {
       insNode.disabled = "disabled";
     });
     insNode.addEventListener('click', function () {
-      var insI = insInput.value.trim();
+      let insI = insInput.value.trim();
       arrOrder(btWrap);
       if (insInput.value.trim() !== "") {
-        var inText = _wtools.w.$("#insInput").value.trim();
-        var a = searchArr(inText);
+        let inText = __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#insInput").value.trim();
+        let a = searchArr(inText);
         if (a == -1) {
+          //插入节点
           var content1 = document.createElement('div');
           content1.innerHTML = inText;
           whoClick.appendChild(content1);
@@ -2316,35 +2263,28 @@ exports.push([module.i, ".traver-wrap section{min-height:20rem}.traver-wrap .BTW
 
 /***/ }),
 /* 86 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["create"] = create;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wtools__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__template_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style_scss__);
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.create = create;
 
-var _wtools = __webpack_require__(0);
-
-var _template = __webpack_require__(87);
-
-var _template2 = _interopRequireDefault(_template);
-
-__webpack_require__(88);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var screenH = window.screen.availHeight;
+const screenH = window.screen.availHeight;
 
 function create() {
-  _wtools.w.$$(".container")[0].innerHTML = _template2.default;
-  _wtools.w.$("#danmuPool").style.height = screenH * 0.6 + "px";
+  __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$$(".container")[0].innerHTML = __WEBPACK_IMPORTED_MODULE_1__template_html___default.a;
+  __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$("#danmuPool").style.height = screenH * 0.6 + "px";
   __webpack_require__.e/* require.ensure */(4).then((function () {
     __webpack_require__(90);
-    var s = __webpack_require__(34);
-    var sl = new s();
+    const s = __webpack_require__(34);
+    const sl = new s();
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 }
 
@@ -2402,30 +2342,23 @@ exports.push([module.i, ".danmu-wrap{box-sizing:border-box}.danmu-wrap .danmu-po
 /***/ }),
 /* 90 */,
 /* 91 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["create"] = create;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wtools__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__template_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style_scss__);
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.create = create;
 
-var _wtools = __webpack_require__(0);
-
-var _template = __webpack_require__(92);
-
-var _template2 = _interopRequireDefault(_template);
-
-__webpack_require__(95);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var screenH = window.screen.availHeight;
+const screenH = window.screen.availHeight;
 
 function create() {
-  _wtools.w.$$(".container")[0].innerHTML = _template2.default;
+  __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$$(".container")[0].innerHTML = __WEBPACK_IMPORTED_MODULE_1__template_html___default.a;
 }
 
 /***/ }),
@@ -2493,28 +2426,21 @@ exports.push([module.i, ".QR-code-wrap h1{color:#317ef3;text-align:center;font-s
 
 /***/ }),
 /* 97 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["create"] = create;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wtools__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__template_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style_scss__);
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.create = create;
-
-var _wtools = __webpack_require__(0);
-
-var _template = __webpack_require__(98);
-
-var _template2 = _interopRequireDefault(_template);
-
-__webpack_require__(99);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function create() {
-  _wtools.w.$$(".container")[0].innerHTML = _template2.default;
+  __WEBPACK_IMPORTED_MODULE_0__wtools__["a" /* w */].$$(".container")[0].innerHTML = __WEBPACK_IMPORTED_MODULE_1__template_html___default.a;
   __webpack_require__.e/* require.ensure */(5).then((function () {
     var s = __webpack_require__(101);
     var sl = new s();
