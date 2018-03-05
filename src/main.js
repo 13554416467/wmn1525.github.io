@@ -7,35 +7,35 @@ const routers = new Set();
 const list = [{
     "title": "DEMO",
     "tasks": [{
-        "title": "移动端图片展示",
+        "title": "mobile登陆页",
         "name": "try/mobile",
         "completed": true,
-        "isLink": false,
-        "github": "https://kelrvins.github.io/otherDemo/picShow.html"
+        "isLink": true,
+        "github": "https://wmn1525.github.io/web-project-learn/css4/index.html  "
     }, {
-        "title": "Bootstrap table做的页面",
+        "title": "mobile桌游精灵练习页面",
         "name": "baiduIfe/BootstrapTable",
         "completed": true,
         "isLink": true,
-        "github": "https://kelrvins.github.io/otherDemo/tables.html"
+        "github": "https://wmn1525.github.io/web-project-learn/ghost-demo/index.html"
     },{
-        "title": "弹幕",
+        "title": "用SASS重构 pc企业响应式官网",
         "name": "try/danmu",
         "completed": true,
         "isLink": false,
-        "github": "https://github.com/kelrvins"
+        "github": "https://wmn1525.github.io/web-project-learn/css14-15/15-1.html "
     },{
-        "title": "滑动验证",
+        "title": "Bootstrap 表单页",
         "name": "try/slideValidation",
         "completed": true,
-        "isLink": false,
-        "github": "https://github.com/kelrvins"
+        "isLink": true,
+        "github": "https://wmn1525.github.io/web-project-learn/css10/index.html"
     },{
-        "title": "win10 日历",
+        "title": "js小游戏狼人杀原生js加jq",
         "name": "try/cale",
         "completed": true,
         "isLink": true,
-        "github": "https://kelrvins.github.io/Calendar"
+        "github": "https://wmn1525.github.io/web-project-learn/js234/peibi.html"
     }]
 }, {
     "title": "文章",
@@ -88,14 +88,14 @@ const list = [{
         "title": "萝卜多社群招聘网站",
         "name": "baiduIfe/musicPlay",
         "completed": true,
-        "isLink": false,
-        "github": "https://github.com/kelrvins"
+        "isLink": true,
+        "github": "https://github.com/wmn1525/lbd-admin"
     }, {
         "title": "学渣乐园后台管理系统",
         "name": "baiduIfe/Carousel",
         "completed": true,
-        "isLink": false,
-        "github": "https://github.com/kelrvins"
+        "isLink": true,
+        "github": "https://github.com/wmn1525/qxdzz-admin"
     }]
 }]
 
