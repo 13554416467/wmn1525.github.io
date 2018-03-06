@@ -270,7 +270,7 @@ const list = [{
         "title": "用SASS重构 pc企业响应式官网",
         "name": "try/danmu",
         "completed": true,
-        "isLink": false,
+        "isLink": true,
         "github": "https://wmn1525.github.io/web-project-learn/css14-15/15-1.html "
     }, {
         "title": "Bootstrap 表单页",
